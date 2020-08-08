@@ -1,0 +1,23 @@
+h1{
+    color: black;
+    font-family: "Helvetica";
+    font-size: 40px;
+}
+
+p{
+    color: black;
+    font-family: "Helvetica";
+}
+.project{
+    color: blueviolet;
+    font-family: "Helvetica";
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.skill{
+    color: blue;
+    font-family: "Helvetica";
+    font-size: 40px;
+    font-weight: 600;
+}
