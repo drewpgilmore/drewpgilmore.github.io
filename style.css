@@ -1,50 +1,13 @@
-h1{
-    color: black;
-    font-family: "Helvetica";
-    font-size: 40px;
+html * {
+    font-family: "Helvetica"
 }
 
-p{
-    color: black;
-    font-family: "Helvetica";
+.jumbotron {
+    margin: 20px 0px 20px 0px;
+    padding: 30px;
+    font-size: smaller;
 }
 
-.header img {
-    float: left;
-    width: 100px;
-    height: 100px;
-    backgroudn: #555;
-    border-radius: 50%;
-}
-
-.header h1 {
-    position: relative;
-    top: 18px;
-    left: 10px;
-}
-
-.header p {
-    position: relative;
-    top: 5px;
-    left: 10px;
-}
-
-thead {
-    color: black;
-    font-family: "Helvetica";
-    font-size: 40px;
-}
-
-.project{
-    color: blueviolet;
-    font-family: "Helvetica";
-    font-size: 40px;
-    font-weight: 650;
-}
-
-.skill{
-    color: blue;
-    font-family: "Helvetica";
-    font-size: 40px;
-    font-weight: 650;
+#highlighted-projects {
+    margin: 20px 0px 20px 0px;
 }
