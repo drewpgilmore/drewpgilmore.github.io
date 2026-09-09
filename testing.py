@@ -9,33 +9,33 @@ SWID = "{5748B7A9-5115-4E78-88B7-A951152E78DE}"
 DIV = {
     "Drew":   "Leucadia",
     "Cal":    "Leucadia",
-    "Carter": "Leucadia",
-    "Noah":   "Leucadia",
-    "Isaac":  "Leucadia",
+    "Carter": "Cardiff",
+    "Noah":   "Cardiff",
+    "Isaac":  "Cardiff",
     "Mason": "Cardiff",
-    "Kyle": "Cardiff",
+    "Kyle": "Leucadia",
     "Marcus": "Cardiff",
-    "Cody": "Cardiff",
-    "Jordan": "Cardiff"
+    "Cody": "Leucadia",
+    "Jordan": "Leucadia"
 }
 
-l = League(LEAGUE_ID, 2025, ESPN_S2, SWID)
-#week = l.current_week
-week = 2
+l = League(LEAGUE_ID, 2026, ESPN_S2, SWID)
+week = l.current_week
+#week = 2
 isProjected = True
 
-def get_score(matchup, home_away, isProjected): 
+def get_score(matchup, home_away, isProjected):
     if home_away == "home":
         t = matchup.home_team
         if isProjected:
             score = matchup.home_projected
-        else: 
+        else:
             score = matchup.home_score
-    else: 
+    else:
         t = matchup.away_team
         if isProjected:
             score = matchup.away_projected
-        else: 
+        else:
             score = matchup.away_score
     name = t.owners[0]["firstName"].title()
     return (name, score)
@@ -56,6 +56,6 @@ data["Score"] = data["Points"].rank().astype(int)
 data.to_clipboard()
 print("Done")
 
-                  
-    
+
+
 
