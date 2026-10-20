@@ -20,9 +20,9 @@ DIV = {
 }
 
 l = League(LEAGUE_ID, 2026, ESPN_S2, SWID)
-week = l.current_week
-#week = 5
-isProjected = True
+#week = l.current_week
+week = 6
+isProjected = False
 
 def get_score(matchup, home_away, isProjected):
     if home_away == "home":
